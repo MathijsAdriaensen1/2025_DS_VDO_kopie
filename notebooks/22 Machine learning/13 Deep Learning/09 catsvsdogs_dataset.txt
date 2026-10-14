@@ -1,0 +1,4 @@
+De dataset kunnen jullie downloaden op 
+https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset
+
+

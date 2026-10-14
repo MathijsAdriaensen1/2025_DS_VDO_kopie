@@ -1,0 +1,40 @@
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    container_name: mypostgres
+    environment:
+      POSTGRES_DB: postgres_db
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: myPassWord
+      PGDATA: /var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - yournetwork
+    volumes:
+      - pgdemodata:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: name@domain.com
+      PGADMIN_DEFAULT_PASSWORD: YourPassWord
+      PGADMIN_CONFIG_ENHANCED_COOKIE_PROTECTION: 'True'
+      PGADMIN_CONFIG_SERVER_MODE: 'True'
+    ports:
+      - "8080:80"   # Poort 8080 op de host wordt gemapt naar poort 80 van pgAdmin
+    depends_on:
+      - db
+    networks:
+      - yournetwork
+
+volumes:
+  pgdemodata:
+
+networks:
+  yournetwork:
+    external: true
+

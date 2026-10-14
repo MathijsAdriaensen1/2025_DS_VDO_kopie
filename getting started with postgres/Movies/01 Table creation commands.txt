@@ -1,0 +1,46 @@
+# Films Table
+
+CREATE TABLE films (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255),
+    release_year INT,
+    country VARCHAR(50),
+    duration INT,
+    language VARCHAR(50),
+    certification VARCHAR(20),
+    gross INT,
+    budget NUMERIC
+);
+
+
+# People Table
+
+CREATE TABLE people (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    birthdate DATE,
+    deathdate DATE
+);
+
+
+# Reviews Table
+
+CREATE TABLE reviews (
+    id SERIAL PRIMARY KEY,
+    film_id INT REFERENCES films(id),
+    num_user INT,
+    num_critic INT,
+    imdb_score NUMERIC,
+    num_votes INT,
+    facebook_likes INT
+);
+
+
+# Roles Table
+
+CREATE TABLE roles (
+    id SERIAL PRIMARY KEY,
+    film_id INT REFERENCES films(id),
+    person_id INT REFERENCES people(id),
+    role VARCHAR(50)
+);

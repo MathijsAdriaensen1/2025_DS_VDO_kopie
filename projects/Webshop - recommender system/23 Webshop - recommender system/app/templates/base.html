@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}Posh | Create Beautiful Websites. Effortlessly.{% endblock %}</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='assets/images/favicons/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='assets/images/favicons/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='assets/images/favicons/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='assets/images/favicons/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='assets/images/favicons/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='assets/images/favicons/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='assets/images/favicons/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='assets/images/favicons/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='assets/images/favicons/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='assets/images/favicons/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='assets/images/favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='assets/images/favicons/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/images/favicons/favicon-16x16.png') }}">
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    >
+
+    <!-- Fonts & template CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/lib/iconsmind/iconsmind.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/lib/css-hamburgers/dist/hamburgers.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/css/custom.css') }}" rel="stylesheet">
+
+    {% block extra_css %}{% endblock %}
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".inner-link" data-bs-offset="60">
+    <main>
+      <!-- NAVBAR -->
+      <div class="znav-container znav-white" id="znav-container">
+        <div class="container">
+          <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand overflow-hidden" href="{{ url_for('index') }}">
+              <img src="{{ url_for('static', filename='assets/images/posh-logo.png') }}" alt="logo" width="80">
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+              <div class="hamburger hamburger--emphatic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Homes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Components</a></li>
+                <!-- voeg hier eventueel url_for(...) in als je routes hebt -->
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- /NAVBAR -->
+
+      {% block breadcrumb %}
+        <!--            Breadcrumbs-->
+            <hr class="color-9 m-0">
+            <div class="background-10">
+                <div class="container font-1 fs--1 py-1 color-6">
+                    <a href="#">Home </a>/
+                    <a href="#">Women's Tops </a>/
+                    <a href="#">Model </a>/
+                    <a href="#">48-20 </a>/ Products</div>
+            </div>
+            <hr class="color-9 m-0">
+      {% endblock %}
+
+      {% block content %}
+      {% endblock %}
+
+      {% block recommendations %}
+      {% endblock %}
+
+      <!-- FOOTER / NEWSLETTER -->
+      <section class="font-1 py-5 background-11 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 pe-lg-5 pb-5 pb-lg-0">
+              <h5>Latest Trends, Styles &amp; Promotions. Are you on the list?</h5>
+              <form>
+                <div class="input-group">
+                  <input class="form-control background-white" type="email" placeholder="Enter your email">
+                  <button class="btn btn-danger" type="button">Sign up!</button>
+                </div>
+              </form>
+              <div class="fs--1 my-2 color-4">
+                By entering your email address, you agree to receive offers. You may unsubscribe at any time.
+              </div>
+              <div class="fs--1 mt-1 color-3">&copy; {{ 2025 }} Posh. All rights reserved.</div>
+            </div>
+            <div class="col-lg-2 col-md-4 pb-5 pb-md-0 fs--1">
+              <h6 class="color-2 text-uppercase">Company</h6>
+              <hr class="mt-3 short left color-8" align="left">
+              <a class="color-4 d-block p-1 ps-0" href="#">About Us</a>
+              <a class="color-4 d-block p-1 ps-0" href="#">Careers</a>
+              <a class="color-4 d-block p-1 ps-0" href="#">Privacy Policy</a>
+            </div>
+            <div class="col-lg-2 col-md-4 pb-5 pb-md-0 fs--1">
+              <h6 class="color-2 text-uppercase">Support</h6>
+              <hr class="mt-3 short left color-8" align="left">
+              <a class="color-4 d-block p-1 ps-0" href="#">Contact</a>
+              <a class="color-4 d-block p-1 ps-0" href="#">Shipping</a>
+            </div>
+            <div class="col-lg-2 col-md-4 fs--1">
+              <h6 class="color-2 text-uppercase">Quicklinks</h6>
+              <hr class="mt-3 short left color-8" align="left">
+              <a class="color-4 d-block p-1 ps-0" href="#">FAQs</a>
+              <a class="color-4 d-block p-1 ps-0" href="#">Size Chart</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /FOOTER -->
+    </main>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='assets/lib/jquery/dist/jquery.js') }}"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="{{ url_for('static', filename='assets/js/core.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+    {% block extra_js %}{% endblock %}
+  </body>
+</html>

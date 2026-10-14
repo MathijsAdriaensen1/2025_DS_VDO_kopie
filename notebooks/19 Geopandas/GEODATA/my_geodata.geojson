@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "my_geodata",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "stad": "Amsterdam" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.0, 52.0 ], [ 5.0, 52.0 ], [ 5.0, 53.0 ], [ 4.0, 53.0 ], [ 4.0, 52.0 ] ] ] } },
+{ "type": "Feature", "properties": { "stad": "Eindhoven" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.0, 51.0 ], [ 5.0, 51.0 ], [ 5.0, 52.0 ], [ 4.0, 52.0 ], [ 4.0, 51.0 ] ] ] } },
+{ "type": "Feature", "properties": { "stad": "Brussel" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 3.0, 50.0 ], [ 4.0, 50.0 ], [ 4.0, 51.0 ], [ 3.0, 51.0 ], [ 3.0, 50.0 ] ] ] } }
+]
+}

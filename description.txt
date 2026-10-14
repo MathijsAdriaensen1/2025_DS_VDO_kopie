@@ -1,0 +1,25 @@
+# scipy notebook
+docker run -it --rm -p 8888:8888 --network pythonexposed -v "${PWD}"/notebooks:/home/jovyan/work jupyter/scipy-notebook
+
+# scipy notebook met psycopg2
+docker run -it --rm -p 8888:8888 --network pythonexposed -v "${PWD}"/notebooks:/home/jovyan/work myjupyter
+
+# scipy notebook met psycopg2
+docker run -it --rm -p 8888:8888 --network pythonexposed -v "${PWD}"/notebooks:/home/jovyan/work myjupyter
+
+docker run -it --rm -p 8888:8888 --mount type=bind,src=".",target=/home/jovyan/work jupyter/scipy-notebook
+
+docker run -it --rm -p 8888:8888 -v "%cd%/notebooks:/home/jovyan/work" jupyter/scipy-notebook
+
+# deep learning notebook - tensorflow MET GPU
+docker run -it --rm --gpus all -v "$PWD"/notebooks:/tf/notebooks -p 8888:8888 tensorflow/tensorflow:2.18.0-gpu-jupyter
+
+# deep learning notebook - tensorflow ZONDER GPU
+docker run -it --rm -v "$PWD"/notebooks:/tf/notebooks -p 8888:8888 tensorflow/tensorflow:2.18.0-jupyter
+
+GETTING STARTED
+https://docs.nvidia.com/deeplearning/frameworks/user-guide/index.html
+https://www.reddit.com/r/docker/comments/1atfveb/how_do_i_give_a_docker_on_docker_desktop_access/?tl=nl&rdt=61709
+https://learn.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl
+https://www.tensorflow.org/install/source#gpu
+https://blog.roboflow.com/use-the-gpu-in-docker/

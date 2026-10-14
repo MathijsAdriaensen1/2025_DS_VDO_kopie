@@ -1,0 +1,6 @@
+services:
+  web:
+    build: .
+    container_name: recommender_webshop
+    ports:
+      - "5010:5000"

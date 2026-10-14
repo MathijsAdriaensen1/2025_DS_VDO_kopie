@@ -1,0 +1,251 @@
+{
+    "Toyota": [
+        "Corolla",
+        "Camry",
+        "Prius",
+        "RAV4",
+        "Hilux",
+        "Land Cruiser",
+        "Yaris",
+        "Highlander",
+        "Tacoma",
+        "4Runner"
+    ],
+    "Honda": [
+        "Civic",
+        "Accord",
+        "CR-V",
+        "Fit",
+        "HR-V",
+        "Pilot",
+        "Odyssey",
+        "Ridgeline",
+        "Insight",
+        "Passport"
+    ],
+    "Ford": [
+        "F-150",
+        "Mustang",
+        "Explorer",
+        "Escape",
+        "Ranger",
+        "Bronco",
+        "Edge",
+        "Expedition",
+        "Maverick",
+        "Fusion"
+    ],
+    "Chevrolet": [
+        "Silverado",
+        "Malibu",
+        "Equinox",
+        "Tahoe",
+        "Suburban",
+        "Colorado",
+        "Camaro",
+        "Impala",
+        "Trailblazer",
+        "Corvette"
+    ],
+    "BMW": [
+        "3 Series",
+        "5 Series",
+        "7 Series",
+        "X1",
+        "X3",
+        "X5",
+        "X7",
+        "i3",
+        "i8",
+        "Z4"
+    ],
+    "Mercedes-Benz": [
+        "C-Class",
+        "E-Class",
+        "S-Class",
+        "GLA",
+        "GLC",
+        "GLE",
+        "GLS",
+        "A-Class",
+        "AMG GT",
+        "Sprinter"
+    ],
+    "Volkswagen": [
+        "Golf",
+        "Passat",
+        "Tiguan",
+        "Jetta",
+        "Polo",
+        "Touareg",
+        "Arteon",
+        "ID.4",
+        "Beetle",
+        "Atlas"
+    ],
+    "Audi": [
+        "A3",
+        "A4",
+        "A6",
+        "A8",
+        "Q3",
+        "Q5",
+        "Q7",
+        "Q8",
+        "e-tron",
+        "TT"
+    ],
+    "Tesla": [
+        "Model S",
+        "Model 3",
+        "Model X",
+        "Model Y",
+        "Cybertruck",
+        "Roadster"
+    ],
+    "Nissan": [
+        "Altima",
+        "Sentra",
+        "Rogue",
+        "Versa",
+        "Leaf",
+        "Murano",
+        "Pathfinder",
+        "Titan",
+        "Armada",
+        "370Z"
+    ],
+    "Hyundai": [
+        "Elantra",
+        "Sonata",
+        "Tucson",
+        "Santa Fe",
+        "Kona",
+        "Ioniq",
+        "Palisade",
+        "Veloster",
+        "Accent",
+        "Genesis"
+    ],
+    "Kia": [
+        "Sportage",
+        "Sorento",
+        "Soul",
+        "Optima",
+        "Seltos",
+        "Telluride",
+        "Rio",
+        "Carnival",
+        "Stinger",
+        "Niro"
+    ],
+    "Subaru": [
+        "Impreza",
+        "Outback",
+        "Forester",
+        "Crosstrek",
+        "Legacy",
+        "Ascent",
+        "WRX",
+        "BRZ"
+    ],
+    "Mazda": [
+        "Mazda3",
+        "Mazda6",
+        "CX-3",
+        "CX-5",
+        "CX-9",
+        "MX-5 Miata",
+        "CX-30",
+        "RX-8"
+    ],
+    "Volvo": [
+        "XC40",
+        "XC60",
+        "XC90",
+        "S60",
+        "S90",
+        "V60",
+        "V90",
+        "C40"
+    ],
+    "Jeep": [
+        "Wrangler",
+        "Grand Cherokee",
+        "Cherokee",
+        "Compass",
+        "Renegade",
+        "Gladiator",
+        "Patriot"
+    ],
+    "Porsche": [
+        "911",
+        "Cayenne",
+        "Macan",
+        "Panamera",
+        "Taycan",
+        "718 Boxster",
+        "718 Cayman"
+    ],
+    "Ferrari": [
+        "488",
+        "812 Superfast",
+        "SF90 Stradale",
+        "Portofino",
+        "Roma",
+        "F8 Tributo",
+        "LaFerrari"
+    ],
+    "Lamborghini": [
+        "Huracan",
+        "Aventador",
+        "Urus",
+        "Gallardo",
+        "Murcielago",
+        "Veneno",
+        "Reventon"
+    ],
+    "Mitsubishi": [
+        "Lancer",
+        "Outlander",
+        "Eclipse Cross",
+        "Pajero",
+        "Mirage",
+        "ASX",
+        "Triton"
+    ],
+    "Peugeot": [
+        "208",
+        "308",
+        "508",
+        "2008",
+        "3008",
+        "5008",
+        "Rifter"
+    ],
+    "Renault": [
+        "Clio",
+        "Megane",
+        "Captur",
+        "Kadjar",
+        "Zoe",
+        "Koleos",
+        "Twingo"
+    ],
+    "Fiat": [
+        "500",
+        "Panda",
+        "Tipo",
+        "Punto",
+        "124 Spider",
+        "Doblo",
+        "Fiorino"
+    ],
+    "Alfa Romeo": [
+        "Giulia",
+        "Stelvio",
+        "Giulietta",
+        "4C",
+        "Spider"
+    ]
+}

@@ -1,0 +1,7 @@
+Oefening (examenvoorbereiding): Voorraadbeheer schoollabo
+
+Context:
+In het schoollabo wordt bij elke les wat materiaal gebruikt (pipetten, handschoenen, reagentia, …).
+De voorraadbeheerder wil weten hoeveel items nog overblijven per materiaalsoort.
+
+Jij schrijft een programma dat bijhoudt hoeveel er nog overblijft, op basis van gebruikte aantallen.
